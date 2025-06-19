@@ -1,0 +1,193 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-editar {
+    background: #fff;
+    padding: 32px 36px;
+    border-radius: 10px;
+    box-shadow: 0 2px 24px 0 rgba(44, 62, 80, 0.08);
+    max-width: 430px;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 28px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.form-editar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 11px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #2c3e50;
+    letter-spacing: 0.2px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 11px;
+    border: 1.2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.12);
+}
+
+.btn-submit, .btn-eliminar {
+    width: 100%;
+    padding: 13px 0;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.25s;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+}
+
+.btn-submit:hover {
+    background-color: #2980b9;
+}
+
+.btn-eliminar {
+    background-color: #e74c3c;
+    margin-top: 0px;
+}
+
+.btn-eliminar:hover {
+    background-color: #c0392b;
+}
+
+.message {
+    padding: 13px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.message-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.btn-return {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #95a5a6;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-return:hover {
+    background-color: #7f8c8d;
+}
+
+/* FOTO DE PERFIL - NUEVO */
+.img-foto-perfil {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+    border: 2px solid #d0e0f0;
+    background: #f7fbff;
+    display: block;
+    margin-bottom: 10px;
+}
+.foto-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.foto-actions button {
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: none;
+    background: #e1e7ef;
+    color: #184d8a;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+.foto-actions button:hover {
+    background: #d1d7df;
+}
+.form-group label[for=txtfoto] {
+    margin-bottom: 2px;
+}
+#txtfoto {
+    width: 100%;
+    font-size: 0.97rem;
+    color: #333;
+    background: #f4f7fa;
+    border: 1px solid #d0e0f0;
+    border-radius: 6px;
+    padding: 7px 10px;
+    margin-bottom: 4px;
+    pointer-events: none;
+    user-select: all;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contenedor-editar {
+        padding: 18px 7px;
+        max-width: 99vw;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .foto-actions {
+        flex-direction: column;
+        gap: 7px;
+        align-items: flex-start;
+    }
+}
