@@ -299,26 +299,31 @@ body {
 
 
 
-
 .btn-add-mensaje {
-    display: flex;
-    align-items: center;
-    background: #67a3f6;
-    color: #fff;
-    border: 2px solid #222;
-    border-radius: 8px;
-    padding: 10px 24px 10px 12px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background 0.13s, box-shadow 0.13s;
-    margin-right: 10px;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #67a3f6 url('../../img/enviar.png') center center no-repeat;
+    background-size: 60% 60%;
     box-shadow: 0 2px 8px rgba(103,163,246,0.08);
+    cursor: pointer;
+    transition: background 0.13s, box-shadow 0.13s, transform 0.10s;
+    outline: none;
+    font-size: 0; /* Oculta el texto */
+    margin-left: 8px;
 }
-.btn-add-mensaje:hover {
-    background: #468bda;
+.btn-add-mensaje:hover,
+.btn-add-mensaje:focus {
+    background-color: #468bda;
+    box-shadow: 0 4px 16px rgba(70,139,218,0.20);
+    transform: scale(1.06);
 }
-
+.btn-add-mensaje:active {
+    transform: scale(0.94);
+}
 
 
 

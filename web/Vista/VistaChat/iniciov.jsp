@@ -107,7 +107,7 @@
                         <input type="hidden" name="origen" value="iniciov.jsp"/>
                         <input type="hidden" name="chat_id" id="chat_id" value="<%= chatIdStr %>"/>
                         <input type="text" name="mensaje" placeholder="Escribe tu mensaje..." autocomplete="off" required/>
-                        <input type="submit" class="btn-submit" name="accion" value="agregar"/>
+                        <input type="submit" class="btn-add-mensaje" name="accion" value="agregar" title="Enviar mensaje" />
                     </form>
                     <% } %>
                 <% } else { %>
