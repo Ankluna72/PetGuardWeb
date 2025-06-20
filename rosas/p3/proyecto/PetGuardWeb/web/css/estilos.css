@@ -1,0 +1,210 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: row-reverse; /* Cambio clave para invertir los lados */
+}
+
+/* Contenedor del fondo (ahora a la derecha) */
+.background-container {
+    flex: 1;
+    background: url('../img/fondo1.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Contenedor del login (ahora a la izquierda) */
+.login-container {
+    width: 40%;
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1); /* Sombra a la derecha ahora */
+    position: relative;
+    z-index: 2;
+}
+
+/* Logo en esquina (ajustado para izquierda) */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+}
+
+/* Resto del CSS se mantiene igual */
+form {
+    width: 100%;
+    max-width: 350px;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #34495e;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    font-size: 15px;
+}
+
+.input-group input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #95a5a6;
+    font-size: 14px;
+}
+
+.separator::before, .separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.separator::before {
+    margin-right: 10px;
+}
+
+.separator::after {
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+/* Estilo para el contenedor del CAPTCHA */
+.captcha-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    background: #f8f9fa;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Estilo para el código CAPTCHA */
+.captcha-code {
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-family: 'Courier New', monospace;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    min-width: 100px;
+    text-align: center;
+}
+
+/* Contenedor del input y botón */
+.captcha-input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Estilo del input */
+.captcha-input {
+    width: 100px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.captcha-input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Botón de refrescar */
+.refresh-captcha {
+    cursor: pointer;
+    color: #3498db;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.refresh-captcha:hover {
+    background: #e3f2fd;
+}
+
+.refresh-captcha svg {
+    width: 18px;
+    height: 18px;
+}
