@@ -112,6 +112,7 @@
                  style="max-width: 140px; max-height: 140px; border: 2px solid #aaa; background: #fff;" />
         </div>  
 
+        
         <label for="txttipo_evento">Tipo de evento:</label>
         <input type="text" name="txttipo_evento" id="txttipo_evento" required>
         <br><br>
