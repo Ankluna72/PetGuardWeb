@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "684c4557afc4b4b833261565"
+  },
+  "id_historial": 123,
+  "dni_veterinario": "87654321",
+  "recomendacion": "Administrar antibióticos durante 7 días.",
+  "fecha": {
+    "$date": "2025-06-13T15:00:00.000Z"
+  },
+  "estado": "activo"
+},
+{
+  "_id": {
+    "$oid": "684efa185779934ddf9e9f2e"
+  },
+  "id_historial": 7,
+  "dni_veterinario": "12345678",
+  "recomendacion": "hola2",
+  "fecha": {
+    "$date": "2025-06-15T17:22:00.885Z"
+  },
+  "estado": "activo"
+},
+{
+  "_id": {
+    "$oid": "684efa295779934ddf9e9f30"
+  },
+  "id_historial": 7,
+  "dni_veterinario": "12345678",
+  "recomendacion": "faraluz",
+  "fecha": {
+    "$date": "2025-06-16T00:41:00.258Z"
+  },
+  "estado": "inactivo"
+},
+{
+  "_id": {
+    "$oid": "684f02cbbfd18bd1cc29543a"
+  },
+  "id_historial": 7,
+  "dni_veterinario": "12345678",
+  "recomendacion": "hola",
+  "fecha": {
+    "$date": "2025-06-15T17:28:43.614Z"
+  },
+  "estado": "activo"
+}]

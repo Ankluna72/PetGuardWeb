@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "684c442aafc4b4b833261560"
+  },
+  "id_historial": 1,
+  "dni_propietario": "12345678",
+  "dni_veterinario": "87654321",
+  "observacion": "La mascota presentó mejoría notable...",
+  "fecha": {
+    "$date": "2025-06-13T15:00:00.000Z"
+  },
+  "estado": "activo"
+},
+{
+  "_id": {
+    "$oid": "684f0888a8b24ba2a273d7b7"
+  },
+  "id_historial": 7,
+  "dni_propietario": "",
+  "dni_veterinario": "12345678",
+  "observacion": "nada mal",
+  "fecha": {
+    "$date": "2025-06-15T17:53:12.610Z"
+  },
+  "estado": "activo"
+},
+{
+  "_id": {
+    "$oid": "684f5d03c30f05355aaa9d89"
+  },
+  "id_historial": 7,
+  "dni_propietario": "45671238",
+  "dni_veterinario": "",
+  "observacion": "eso pense",
+  "fecha": {
+    "$date": "2025-06-15T23:53:39.095Z"
+  },
+  "estado": "activo"
+},
+{
+  "_id": {
+    "$oid": "684f5d1ec30f05355aaa9d8c"
+  },
+  "id_historial": 7,
+  "dni_propietario": "45671238",
+  "dni_veterinario": "",
+  "observacion": "interesante lol\r\n",
+  "fecha": {
+    "$date": "2025-06-15T23:55:03.694Z"
+  },
+  "estado": "activo"
+},
+{
+  "_id": {
+    "$oid": "684f64d3c30f05355aaa9da3"
+  },
+  "id_historial": 7,
+  "dni_propietario": "45671238",
+  "dni_veterinario": "",
+  "observacion": "bien",
+  "fecha": {
+    "$date": "2025-06-16T00:26:59.428Z"
+  },
+  "estado": "activo"
+},
+{
+  "_id": {
+    "$oid": "684f64e0c30f05355aaa9da6"
+  },
+  "id_historial": 7,
+  "dni_propietario": "45671238",
+  "dni_veterinario": "",
+  "observacion": "bien",
+  "fecha": {
+    "$date": "2025-06-16T00:27:12.487Z"
+  },
+  "estado": "activo"
+},
+{
+  "_id": {
+    "$oid": "684f65bac30f05355aaa9dad"
+  },
+  "id_historial": 7,
+  "dni_propietario": "",
+  "dni_veterinario": "12345678",
+  "observacion": "BIEN BIEN 2\r\n",
+  "fecha": {
+    "$date": "2025-06-16T00:40:33.631Z"
+  },
+  "estado": "activo"
+}]

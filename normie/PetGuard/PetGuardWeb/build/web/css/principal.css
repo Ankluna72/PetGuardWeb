@@ -1,0 +1,160 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 may 2025, 13:00:36
+    Author     : Jefferson
+*/
+
+/* Ocupa todo el alto y posiciona el contenido correctamente */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('../img/fondo2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor para centrar vertical y horizontalmente */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal con transparencia y sombra */
+.container {
+    width: 90%;
+    max-width: 960px;
+    background-color: rgba(255, 255, 255, 0.50); /* más transparente */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Diseño en grilla de 3 columnas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Cada módulo representa una sección */
+.module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.module img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.module span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.module:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Footer estilizado y centrado al final de la página */
+footer {
+    text-align: center;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ddd;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p::before {
+    content: "© ";
+}
+
+/* --- BOTÓN FLOTANTE LOGOUT INFERIOR IZQUIERDO --- */
+.logout-btn {
+    margin-bottom: 30px;
+    position: fixed;
+    left: 32px;
+    bottom: 32px;
+    z-index: 9999;
+    background: #fff;
+    color: #384966;
+    border: none;
+    border-radius: 36px;
+    padding: 10px 22px 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 10px #b6c3d6;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.logout-btn:hover {
+    background: #384966;
+    color: #fff;
+}
+.logout-btn .logout-logo {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 700px) {
+    .container {
+        padding: 12px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .logout-btn {
+        left: 10px;
+        bottom: 10px;
+        padding: 8px 15px 8px 10px;
+        font-size: 0.95rem;
+    }
+    .logout-btn .logout-logo {
+        width: 18px;
+        height: 18px;
+        margin-right: 3px;
+    }
+}
